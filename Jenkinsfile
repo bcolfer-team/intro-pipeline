@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Hello') {
       steps {
-        git(url: 'git@github.com:bcolfer-team/intro-pipeline.git', branch: 'master')
+        echo 'Hello World!'
+        sh 'java --version'
       }
-    }
   }
 }
